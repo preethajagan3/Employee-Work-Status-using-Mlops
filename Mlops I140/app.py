@@ -11,6 +11,8 @@ with open("logistic_regression_model.pkl", "rb") as file:
 @app.route("/")
 def home():
     return render_template("index.html")
+    return
+    
 
 @app.route("/predict", methods=["POST"])
 def predict():
